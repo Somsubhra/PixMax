@@ -9,6 +9,8 @@ public:
     Image(QString url);
     ~Image();
 
+    QString url();
+
 private:
     QString m_url;
 };

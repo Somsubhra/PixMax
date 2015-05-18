@@ -14,6 +14,9 @@ public:
     Canvas(ViewPort *viewPort);
     ~Canvas();
 
+    ViewPort* viewPort();
+    Image* currentImage();
+
 public slots:
     void slotLoadImage(QString url);
 

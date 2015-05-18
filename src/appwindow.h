@@ -16,6 +16,8 @@ public:
 
     ActionCollection* actionCollection();
 
+    ViewPort* viewPort();
+
 signals:
 
 public slots:

@@ -14,6 +14,9 @@ public:
     ViewPort(AppWindow *appWindow);
     ~ViewPort();
 
+    AppWindow* appWindow();
+    Canvas* canvas();
+
 private:
     AppWindow *m_appWindow;
     Canvas *m_canvas;

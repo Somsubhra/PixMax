@@ -19,3 +19,12 @@ ViewPort::~ViewPort()
     m_canvas = 0;
 }
 
+AppWindow* ViewPort::appWindow()
+{
+    return m_appWindow;
+}
+
+Canvas* ViewPort::canvas()
+{
+    return m_canvas;
+}

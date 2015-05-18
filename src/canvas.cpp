@@ -41,3 +41,13 @@ void Canvas::slotLoadImage(QString url)
     setPixmap(QPixmap::fromImage(*m_currentImage));
     setWindowFilePath(url);
 }
+
+ViewPort* Canvas::viewPort()
+{
+    return m_viewPort;
+}
+
+Image* Canvas::currentImage()
+{
+    return m_currentImage;
+}

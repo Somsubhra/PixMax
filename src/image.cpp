@@ -11,3 +11,7 @@ Image::~Image()
 
 }
 
+QString Image::url()
+{
+    return m_url;
+}

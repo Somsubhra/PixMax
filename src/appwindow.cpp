@@ -49,3 +49,8 @@ ActionCollection* AppWindow::actionCollection()
 {
     return m_actionCollection;
 }
+
+ViewPort* AppWindow::viewPort()
+{
+    return m_viewPort;
+}

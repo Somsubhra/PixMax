@@ -15,6 +15,9 @@ AppWindow::AppWindow(QWidget *parent)
     m_standardActions->createStandardActions();
 
     createMenuBar();
+
+    m_canvas = new Canvas(this);
+    setCentralWidget(m_canvas);
 }
 
 AppWindow::~AppWindow()

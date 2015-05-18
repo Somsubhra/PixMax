@@ -5,7 +5,7 @@
 
 #include "actioncollection.h"
 #include "standardactions.h"
-#include "canvas.h"
+#include "viewport.h"
 
 class AppWindow : public QMainWindow
 {
@@ -26,7 +26,7 @@ private:
 private:
     ActionCollection *m_actionCollection;
     StandardActions *m_standardActions;
-    Canvas *m_canvas;
+    ViewPort *m_viewPort;
 };
 
 #endif // APPWINDOW_H

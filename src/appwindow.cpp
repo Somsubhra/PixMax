@@ -16,8 +16,8 @@ AppWindow::AppWindow(QWidget *parent)
 
     createMenuBar();
 
-    m_canvas = new Canvas(this);
-    setCentralWidget(m_canvas);
+    m_viewPort = new ViewPort(this);
+    setCentralWidget(m_viewPort);
 }
 
 AppWindow::~AppWindow()
@@ -27,6 +27,9 @@ AppWindow::~AppWindow()
 
     delete m_standardActions;
     m_standardActions = 0;
+
+    delete m_viewPort;
+    m_viewPort = 0;
 }
 
 void AppWindow::createMenuBar()

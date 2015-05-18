@@ -6,11 +6,15 @@ SOURCES += \
     src/actioncollection.cpp \
     src/actionhandlers.cpp \
     src/standardactions.cpp \
-    src/canvas.cpp
+    src/viewport.cpp \
+    src/canvas.cpp \
+    src/image.cpp \
 
 HEADERS += \
     src/appwindow.h \
     src/actioncollection.h \
     src/actionhandlers.h \
     src/standardactions.h \
-    src/canvas.h
+    src/viewport.h \
+    src/canvas.h \
+    src/image.h \

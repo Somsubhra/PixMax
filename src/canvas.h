@@ -3,17 +3,23 @@
 
 #include <QLabel>
 
-class AppWindow;
+#include "image.h"
+
+class ViewPort;
 
 class Canvas : public QLabel
 {
     Q_OBJECT
 public:
-    Canvas(AppWindow *appWindow);
+    Canvas(ViewPort *viewPort);
     ~Canvas();
 
+public slots:
+    void slotLoadImage(QString url);
+
 private:
-    AppWindow *m_appWindow;
+    ViewPort *m_viewPort;
+    Image *m_currentImage;
 };
 
 #endif // CANVAS_H

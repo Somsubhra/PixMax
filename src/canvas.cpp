@@ -39,6 +39,7 @@ void Canvas::slotLoadImage(QString url)
     }
 
     setPixmap(QPixmap::fromImage(*m_currentImage));
+    adjustSize();
     setWindowFilePath(url);
 }
 

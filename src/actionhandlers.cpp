@@ -24,11 +24,11 @@ void ActionHandlers::slotOpen()
 {
     QString picDir = QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).at(0);
 
-    QString file = QFileDialog::getOpenFileName(m_appWindow,
+    QString url = QFileDialog::getOpenFileName(m_appWindow,
                                                     tr("Open Document"),
                                                     picDir);
 
-    Q_UNUSED(file);
+    m_appWindow->viewPort()->canvas()->slotLoadImage(url);
 }
 
 void ActionHandlers::slotHelp()

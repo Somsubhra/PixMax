@@ -10,6 +10,7 @@ ViewPort::ViewPort(AppWindow *appWindow)
     setBackgroundRole(QPalette::Dark);
 
     m_canvas = new Canvas(this);
+    setAlignment(Qt::AlignCenter);
     setWidget(m_canvas);
 }
 

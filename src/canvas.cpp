@@ -23,6 +23,12 @@ Canvas::~Canvas()
 
 void Canvas::slotLoadImage(QString url)
 {
+    if(m_currentImage)
+    {
+        delete m_currentImage;
+        m_currentImage = 0;
+    }
+
     m_currentImage = new Image(url);
 
     if(m_currentImage->isNull())
